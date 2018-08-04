@@ -1,10 +1,15 @@
 
 
+var express = require('express'),
+app = express(),
+morgan = require('morgan');
+
 var instance = require('./database');
 var logs = require('./logs');
 
 
 Object.assign = require('object-assign');
+
 //app.engine('html', require('ejs').renderFile); //console log modules unten!
 
 //if (ACCESSLOG) app.use(morgan('combined'));
